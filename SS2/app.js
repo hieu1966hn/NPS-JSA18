@@ -1,3 +1,25 @@
+
+// for(let i = 0; i< 5; i++){ 
+//   console.log(i);
+// }
+// =>> kết quả đạt được: 0,1,2,3,4 (không thể bằng 5 do điều kiện ban đầu đặt ra phải nhỏ hơn 5)
+
+/**
+Mô tả cú pháp 
+for(box1; box2; box3){
+  Câu lệnh thực hiện....
+}
+**/
+
+/**
+Trong đó: 
+- Box1: Câu lệnh được thực hiện lần đầu tiên và duy nhất của vòng lặp (từ lần lặp 2 sẽ không chạy ở đây nữa)
+- Box2: Điều kiện dừng của vòng lặp (Mỗi lần lặp đều phải thỏa mãn vòng lặp này mới được chạy code bên trong)
+- Box3; Câu lệnh được thực hiện cuối cùng mỗi lần lặp
+**/
+
+
+
 // let arr = [1, 2, 3, 4];
 
 //// arr.length => số phần tử trong mảng = 4
