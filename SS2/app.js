@@ -88,3 +88,12 @@ console.log(menu);
 /// Đề bài yêu cầu người dùng nhập vào?
 let input = prompt("Mời người dùng nhập vào C,R,U,D");
 console.log("input: ", input);
+
+
+
+const a = 123;
+a = 1;
+console.log(a);
+
+
+
