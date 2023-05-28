@@ -5,14 +5,14 @@
 // =>> kết quả đạt được: 0,1,2,3,4 (không thể bằng 5 do điều kiện ban đầu đặt ra phải nhỏ hơn 5)
 
 /**
-Mô tả cú pháp 
+Mô tả cú pháp
 for(box1; box2; box3){
   Câu lệnh thực hiện....
 }
 **/
 
 /**
-Trong đó: 
+Trong đó:
 - Box1: Câu lệnh được thực hiện lần đầu tiên và duy nhất của vòng lặp (từ lần lặp 2 sẽ không chạy ở đây nữa)
 - Box2: Điều kiện dừng của vòng lặp (Mỗi lần lặp đều phải thỏa mãn vòng lặp này mới được chạy code bên trong)
 - Box3; Câu lệnh được thực hiện cuối cùng mỗi lần lặp
@@ -57,7 +57,7 @@ arr.splice(box1 ,box2 , box3);
 */
 
 
-/** 
+/**
  Yêu cầu bài toán: menu nhà hàng với mảng ban đầu cho: let menu = ["cơm rang", "Phở", "sườn chua ngọt"];
  1. Khi mới vào trang web hiện thông báo "Mời người dùng nhập vào C,R,U,D"
  2. Kiểm tra người dùng nhập vào gì: c,r,u,d => xử lý điều kiên như sau
@@ -75,25 +75,25 @@ arr.splice(box1 ,box2 , box3);
 
 
 /// Kiến thức thêm: tìm kiếm trong mảng với filter, find
-let menu = ["cơm rang", "rau xào", "cơm chiên"];
-//// Tìm kiếm vị trí món rau xào trong mảng menu
-let vitriMonRauXao = menu.indexOf("rau xào");
-console.log("vitriMonRauXao: ", vitriMonRauXao); // 1
+// let menu = ["cơm rang", "rau xào", "cơm chiên"];
+// //// Tìm kiếm vị trí món rau xào trong mảng menu
+// let vitriMonRauXao = menu.indexOf("rau xào");
+// console.log("vitriMonRauXao: ", vitriMonRauXao); // 1
 
-/// Update tên món ăn vừa rồi => món khác 
-menu[vitriMonRauXao] = "Rau mồng tơi"
+// /// Update tên món ăn vừa rồi => món khác 
+// menu[vitriMonRauXao] = "Rau mồng tơi"
 
-console.log(menu);
+// console.log(menu);
 
-/// Đề bài yêu cầu người dùng nhập vào?
-let input = prompt("Mời người dùng nhập vào C,R,U,D");
-console.log("input: ", input);
+// /// Đề bài yêu cầu người dùng nhập vào?
+// let input = prompt("Mời người dùng nhập vào C,R,U,D");
+// console.log("input: ", input);
 
 
 
-const a = 123;
-a = 1;
-console.log(a);
+// const a = 123;
+// a = 1;
+// console.log(a);
 
 
 
