@@ -42,4 +42,19 @@ else if (input === "u") {
   //// Update món ăn tại vị trí muốn thay thế
   menu[viTriMonAnThayThe] = prompt("Mời người dùng cập nhật món ăn mới");
 }
+else if (input === "d") {
+  let viTriMonAnDelete = menu.indexOf(
+    prompt("Mời người dùng nhập vào tên món ăn muốn xóa")
+  );
+  if (viTriMonAnDelete < 0) {
+    alert("Món ăn này hiện không có trong menu")
+  }
+
+  //// Delete món ăn tại vị trí đã biết
+  menu.splice(viTriMonAnDelete, 1);
+}
+else {
+  alert("Không tồn tại yêu cầu");
+}
+
 
