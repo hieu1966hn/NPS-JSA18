@@ -55,3 +55,40 @@ let products = {
     },
   ]
 }
+
+
+for (let i of products.data) {
+
+  let card = document.createElement("div");
+  card.classList.add("card");
+
+  let imgContainer = document.createElement("div");
+  imgContainer.classList.add(image - container);
+
+  let image = document.createElement("img");
+  image.setAttribute("src", i.image)
+  imgContainer.appendChild(image);
+  card.appendChild(imgContainer);
+
+
+  let container = document.createElement("div");
+  container.classList.add("container");
+
+  let name = document.createElement("h5");
+  name.classList.add("product-name");
+  name.innerText = i.productName.toUpperCase();
+  container.appendChild(name);
+
+
+  let price = document.createElement("h6");
+  price.innerText = "$" + i.price;
+  container.appendChild(price);
+
+  card.appendChild(container);
+  document.getElementById("products").appendChild(card);
+}
+
+document.getElementById("search").addEventListener("click", () => {
+  let searchInput = document.getElementById("search-input").ariaValueMax.toUpperCase();
+  let cards = document.querySelectorAll(".card");
+})
