@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    // Code tại đây
+    //// Truy vấn LS tại đây
+    // console.log(
+    //   JSON.parse(
+    //     localStorage.getItem("menu")
+    //   )
+    // );
+
+    // console.log(
+    //   JSON.parse(
+    //     localStorage.obj
+    //   )
+    // );
+
+
+    /////// Thêm mới dữ liệu "ếch" vào mảng menu và cập nhật dữ liệu đó trên localStorage
+    let menu = JSON.parse(localStorage.getItem("menu"));
+    menu.push("ếch");
+    localStorage.setItem("menu", JSON.stringify(menu));
+
+
+
+
+  </script>
+</body>
+
+</html>
