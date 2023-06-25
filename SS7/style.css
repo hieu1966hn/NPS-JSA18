@@ -107,3 +107,26 @@ body {
 
 
 /* Phần additional section */
+.additional-section {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.additional-section .row {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.additional-section .item {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  /* flex-shrink, flex-grow*/
+}
+
+.additional-section .item .label {
+  font-weight: bold;
+}
