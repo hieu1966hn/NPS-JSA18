@@ -13,8 +13,14 @@ const sunset = document.querySelector(".sunset");
 const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind-speed");
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${API_KEY}`)
-  .then(response => response.json())
-  .then((data) => {
-    console.log(data); //// kết quả là gì?
-  })
+
+
+searchInput.addEventListener("change", function (event) {
+  console.log(event.target.value); ////?
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=vi&units=metric`)
+    .then(response => response.json())
+    .then((data) => {
+      console.log(data); //// kết quả là gì?
+    });
+})
+
