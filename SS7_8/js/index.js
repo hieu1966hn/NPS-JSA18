@@ -4,7 +4,7 @@ const DEFAULT_VALUE = '__';
 const searchInput = document.getElementById("search-input");
 const cityName = document.querySelector(".city-name");
 const weatherState = document.querySelector(".weather-state");
-const weatherIcon = document.querySelector("weather-icon");
+const weatherIcon = document.querySelector(".weather-icon");
 const temperature = document.querySelector(".temperature");
 
 ///////Section 2
@@ -21,6 +21,14 @@ searchInput.addEventListener("change", function (event) {
     .then(response => response.json())
     .then((data) => {
       console.log(data); //// kết quả là gì?
+
+      cityName.innerHTML = data.name;
+      weatherState.innerHTML = data.weather[0].description;
+      weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      console.log(weatherIcon.src);
+      temperature.innerHTML = data.main.temp;
+
+
     });
 })
 
