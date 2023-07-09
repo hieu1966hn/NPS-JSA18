@@ -29,6 +29,16 @@ searchInput.addEventListener("change", function (event) {
       temperature.innerHTML = data.main.temp;
 
 
+      // Code Hà Phương
+      let sunriseTime = new Date((Number(data.sys.sunrise) * 1000));
+      console.log("sunriseTime: ", sunriseTime);
+      sunrise.innerHTML = `${sunriseTime.getHours()}:${sunriseTime.getMinutes()}`;
+
+      let sunsetTime = new Date(Number(data.sys.sunset) * 1000)
+      sunset.innerHTML = `${sunsetTime.getHours()}:${sunsetTime.getMinutes()}`
+
+      humidity.innerHTML = data.main.humidity
+      windSpeed.innerHTML = (data.wind.speed * 3.6).toFixed(3);
     });
 })
 
